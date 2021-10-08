@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Django blog</title>
 </head>
 <body>
-
+    <header>
+        <h1><a href="{%  url 'home' %}">Django blog</a></h1>
+    </header>
+    <div>
+        {% block content %}
+        {%  endblock content %}
+    </div>
 </body>
 </html>
